@@ -1,0 +1,220 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <link rel="style.css">
+    <script>
+        //função para aumentar o tamanho da imagem
+        function aumentarimagem(element) {
+            element.style.width ="100%";
+            element.style.height ="auto";
+        }
+    </script>
+    <title>Confeitaria</title>
+      <style>
+        .container {
+            display: flex;
+            align-items:center;
+        }
+        .title {
+            font-size:24px; /* Tamanho da fonte */
+            font-weight: bold; /* texto em negrito */
+            color:#fe2cfb /* Cor do texto */
+            text-transform: uppercase; /* Transforma o texto em maiúsculas */
+        }
+        .image {
+            width: 10px; /* lagura da imagem */
+            height:20px; /* Altura da imagem */
+            margin-right: 10px; /* Espacamento à direita da */
+        }
+        
+    /* Estilos globais */
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: pink; /* Fundo rosa */
+            color: white; /* Texto branco */
+        }
+        header, nav, section, footer {
+            margin: 20px;
+        }
+        .produto {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            vertical-align:initial;
+            background-color: #fff;
+            color: #ee8ef0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: #f38dd7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        /* Estilos para a barra de carrinho */
+        #carrinho {
+            display: flex;
+            align-items: center;
+        }
+        #carrinho button {
+            margin-left: 10px;
+            background-color: pink;
+            border: none;
+            color: white;
+            padding: px 10px;
+            cursor: pointer;        }
+        </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <span class="title" "color: rgb(241, 16, 204);"> Bem-vindo à confeitaria PATY`S CAKE</span>
+        <li><img src="img/Logotipo confeitaria simples rosa.png" alt="imagem" </li>
+    </header>
+    </div>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cupcakes">Cupcakes</a></li>
+                <li><a href="#bolos">Bolos</a></li>
+                <li><a href="#empresa">Sobre a Empresa</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div id="carrinho">
+            <button>Colocar no carrinho <img src="img/carrinho.jpg" width="150"> </button>
+        </div>
+    </nav>
+    
+    <section id="produtos">
+        <h2 style="color: pink;">Nossos Produtos</h2>
+        
+        <div class="produto">
+            <img src="img/bolo de chocolate 2 andares.jpg">
+            <h3>Bolo de Chocolate</h3>
+            <p> Um bolo delicioso de chocolate, perfeito para todas as ocasiões.</p>
+            <p>Preço à partir de R$67,00 o kg</p>
+            <button>Comprar Agora</button>
+        </div>
+
+        <div class="produto">
+            <img src="img/imagens canvas/Dia do consumidor, Story Instagram promoção loja online (1).png">
+            <h3>Bolo Creme de Morango com galak</h3>
+            <p>Uma explosão de sabores que vai te levar às estrelas.</p>
+            <p>Preço á partir R$70,00 o kg</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="produto">
+            <img src="img/imagens canvas/Bolo teste.png">
+            <h3>Lindo Bolo personalizado com recheios a escolha</h3>
+            <p>Valor que reflete a qualidade premium dos ingredientes</p>
+            <p>Consulte nossos valores</p>
+            <button>Ir para compra</button>
+        </div>
+        >-- Adicione mais produtos aqui -->
+    </section>
+    
+    <section id="cupcakes">
+        <h2 style="color: pink;">Cardápio de Cupcakes</h2>
+        
+        <div class="produto">
+            <img src="img/cup cake vanila.jpg"Cupcake de Baunilha>
+            <h3>Cupcake de Baunilha</h3>
+            <p>Um clássico cupcake de baunilha com cobertura cremosa.</p>
+            <p>Preço: R$3,00</p>
+            <button>Comprar Agora</button>
+        </div>
+        
+        <div class="produto">
+            <img src="img/cup cake soft.jpg" alt="Cupcake de Chocolate">
+            <h3>Cupcake de Chocolate</h3>
+            <p>Um cupcake rico em chocolate para os amantes de cacau.</p>
+            <p>Preço: R$3,50</p>
+            <button>Comprar Agora</button>
+        </div>
+        
+        <!-- Adicione mais cupcakes aqui -->
+    </section>
+    
+    <section id="bolos">
+        <h2 style="color: pink;">Cardápio de Bolos</h2>
+        
+        <div class="produto">
+            <img src="img/Cupcake de morango.jpg" alt="Bolo de Morango">
+            <h3>Cupcake de Morango</h3>
+            <p>Um Cupcake incrivelmente saboroso com camadas de morango.</p>
+            <p>Preço: R$25,00</p>
+            <button>Comprar Agora</button>
+        </div>
+        
+        <div class="produto">
+            <img src="img/Cupcake limão.jpg" alt="Cupcake de Limão">
+            <h3>Cupcake de Limão</h3>
+            <p>Um cupcake refrescante de limão, perfeito para dias quentes.</p>
+            <p>Preço: R$6,90</p>
+            <button>Comprar Agora</button>
+        </div>
+        
+        <!-- Adicione mais bolos aqui -->
+    </section>
+    
+   
+    <section id="empresa">
+        <h2 style="color: rgb(248, 20, 198);">Sobre a Confeitaria Delícia</h2>
+        <p>Nós somos a Confeitaria Paty`s, especializada em criar doces irresistíveis para todos os gostos.</p>
+        <p>Valores: Qualidade, Criatividade e Satisfação do Cliente.</p>
+        <a href="#valores">Saiba mais</a>
+    </section>
+    
+    <section id="contato">
+        <h2 style="color: rgb(240, 6, 194);">Entre em Contato</h2>
+        
+        <p>Telefone: (11)994143994</p>
+        <p>Email: confeitariapatyscake@gmail.com</p>
+        <span>Localização: <a href="#mapa">Ver no Mapa</a></span>
+    </section>
+    
+    <section id="formas-pagamento">
+        <h2 style="color: pink;">Formas de Pagamento</h2>
+        <p>Aceitamos as seguintes formas de pagamento:</p>
+        <ul>
+            <li><img src="img/Visa.jpg" alt="Visa" width="30"> Visa</li>
+            <li><img src="img/Master.jpg" alt="MasterCard" width="30"> MasterCard</li>
+            <li><img src="img/Dinners.jpg" alt="American Express" width="30" > Diners Club</li>
+            <!-- Adicione mais bandeiras de cartões aqui -->
+        </ul>
+    </section>
+    
+    <section id="mapa">
+        <h2 style="color: pink;">Localização</h2>
+        <!-- Inclua aqui um mapa incorporado ou um link para a localização -->
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Confeitaria PATY`S CAKE</p>
+    </footer>
+</body>
+</html>
